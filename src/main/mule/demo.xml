@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="demoFlow" doc:id="cebc7bfd-d329-45e7-9319-2017bd0daf1e" >
 		<http:listener doc:name="Listener" doc:id="02934c82-c02b-4bb4-a28e-6eb9a6f7c645" config-ref="HTTP_Listener_config" path="/listening"/>
 		<logger level="INFO" doc:name="Logger" doc:id="05f8a3e6-e6e0-4d39-94cd-cfedec64e506" message="Woohoo, I can log something!"/>
+		<set-payload value="MuleSoft Rocks!" doc:name="Set Payload" doc:id="285e7064-d1cb-4bf0-89ee-203b11afddba" />
 	</flow>
 </mule>
